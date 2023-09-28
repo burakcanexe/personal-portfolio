@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,12 +18,48 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #27272A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F59E0B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+.monospace {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.subtitle {
+  background: #f59d0bd9;
+  background: linear-gradient(to right, #f59d0bd9 0%, #CF1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pulseAnim {
+  animation: pulse 0.9s linear infinite;
+}
+
+
+@keyframes pulse {
+  50% {
+    opacity: 0;
+  }
+}
+
+.markdown > * {
+  all: revert;
 }

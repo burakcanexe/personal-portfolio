@@ -1,0 +1,30 @@
+#blogContent>h1 {
+    font-size: 3rem;
+}
+
+#blogContent>h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+#blogContent>p:first-child {
+    font-size: 1.6rem !important;
+}
+
+#blogContent>p,
+li {
+    font-size: 1.2rem;
+}
+
+#blogContent>ul, #blogContent>ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#blogContent {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
