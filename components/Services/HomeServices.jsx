@@ -49,10 +49,10 @@ function HomeServices() {
                 </div>
             </div>
             <div className='flex flex-wrap w-full lg:w-7/12 justify-between'>
-                <ServiceCard icon={() => { return <Image src={phone} className='w-[60px]' /> }} type={'mobil'} title={'Mobil Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
-                <ServiceCard icon={() => { return <Image src={computer} className='w-[60px]' /> }} type={'web'} title={'Web Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
-                <ServiceCard icon={() => { return <Image src={frontend} className='w-[60px]' /> }} type={'frontend'} title={'Frontend Geliştirme'} maddeler={['Modern Tasarım Geliştirme', 'Yeni Componentler Geliştirme', 'Pixel Perfect Kodlama']} />
-                <ServiceCard icon={() => { return <Image src={backend} className='w-[60px]' /> }} type={'backend'} title={'Backend Geliştirme'} maddeler={['Optimize Kodlama', 'Rest API Geliştirme', 'Socket.io İle Canlı İletişim']} />
+                <ServiceCard icon={() => { return <Image loading='lazy' src={phone} className='w-[60px]' /> }} type={'mobil'} title={'Mobil Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
+                <ServiceCard icon={() => { return <Image loading='lazy' src={computer} className='w-[60px]' /> }} type={'web'} title={'Web Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
+                <ServiceCard icon={() => { return <Image loading='lazy' src={frontend} className='w-[60px]' /> }} type={'frontend'} title={'Frontend Geliştirme'} maddeler={['Modern Tasarım Geliştirme', 'Yeni Componentler Geliştirme', 'Pixel Perfect Kodlama']} />
+                <ServiceCard icon={() => { return <Image loading='lazy' src={backend} className='w-[60px]' /> }} type={'backend'} title={'Backend Geliştirme'} maddeler={['Optimize Kodlama', 'Rest API Geliştirme', 'Socket.io İle Canlı İletişim']} />
             </div>
         </div >
     )

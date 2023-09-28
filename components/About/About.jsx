@@ -37,7 +37,7 @@ function About() {
   return (
     <div id='about' className='w-full flex flex-wrap pt-20'>
       <div className='w-4/12 relative hidden lg:block'>
-        <Image src={me} className='w-full h-full object-cover object-center' />
+        <Image loading='lazy' src={me} className='w-full h-full object-cover object-center' />
         <div className='absolute left-10 top-10 right-10 bg-black px-8 py-3 flex justify-center'>
           <h1 className='font-bold text-4xl text-center'>Burak Can Yıldırım</h1>
         </div>

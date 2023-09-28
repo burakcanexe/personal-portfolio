@@ -84,7 +84,7 @@ function page() {
                         <div className='w-full group'>
                             <div className='overflow-hidden w-full'>
                                 <Link href={`/blog/${blog.slug}`} className='w-full'>
-                                    <img src={blog.mainPicture} alt={blog.title} className='w-full max-h-[230px] object-cover object-center group-hover:scale-105 duration-200' />
+                                    <img loading='lazy' src={blog.mainPicture} alt={blog.title} className='w-full max-h-[230px] object-cover object-center group-hover:scale-105 duration-200' />
                                 </Link>
                             </div>
                             <div className='bg-gradient-to-b from-bg to-lightbg flex flex-col items-start px-4 py-4'>
