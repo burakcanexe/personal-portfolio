@@ -4,7 +4,7 @@ function ProjectCard({ name, description, technologies, time, role, picture, lin
     return (
         <div className='w-full p-6 flex flex-col lg:flex-row group bg-gradient-to-b lg:bg-gradient-to-r from-bg to-lightbg shadow-md'>
             <a href={link} target='_blank' className='flex justify-center items-center w-full lg:w-5/12 lg:max-h-[400px] overflow-hidden'>
-                <img loading='lazy' src={picture} className='h-full object-cover object-center w-full group-hover:scale-105 duration-200' />
+                <img loading='lazy' src={picture} alt={name} className='h-full object-cover object-center w-full group-hover:scale-105 duration-200' />
             </a>
             <div className='flex flex-col lg:px-10 mt-8 lg:mt-0 w-full lg:w-7/12 gap-6 justify-between'>
                 <div className='flex flex-col'>

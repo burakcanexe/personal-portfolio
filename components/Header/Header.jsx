@@ -41,7 +41,7 @@ function Header() {
             <div className='w-full lg:w-1/2 flex justify-center lg:justify-end items-center py-20 lg:py-0'>
                 <div className='flex flex-col items-center gap-4 w-1/2 lg:w-6/12'>
                     <div className='bg-gradient-to-b from-orange to-red shadow-md p-2 rounded-full'>
-                        <Image loading='lazy' src={Me} className='rounded-full' />
+                        <Image loading='lazy' src={Me} alt='Burak Can Yıldırım' className='rounded-full' />
                     </div>
                     <div className='flex gap-4 mt-4'>
                         <a href='https://www.linkedin.com/in/burak-can-y%C4%B1ld%C4%B1r%C4%B1m-27b58616b/' target='_blank' className='rounded-full p-4 mt-1 hover:mt-0 hover:mb-1 bg-gradient-to-b from-black to-lightbg shadow-md duration-200'>

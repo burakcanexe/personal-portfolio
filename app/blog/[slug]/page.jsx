@@ -40,7 +40,7 @@ function page({ params }) {
                     <div className='flex gap-4 items-center lg:hidden mt-10 justify-between w-full'>
                         <div className='flex gap-2 items-center'>
                             <div className='bg-gradient-to-b from-orange to-red shadow-md p-[2px] w-[40px] h-[40px] rounded-full'>
-                                <Image loading='lazy' loading='lazy' src={Me} className='rounded-full' />
+                                <Image alt='Burak Can Yıldırım' loading='lazy' loading='lazy' src={Me} className='rounded-full' />
                             </div>
                             <span className='text-xl font-semibold'>Burak Can Yıldırım</span>
                         </div>
@@ -49,13 +49,13 @@ function page({ params }) {
                     <div className='lg:flex gap-4 items-center hidden'>
                         <span className='lg:text-xl font-semibold'>Burak Can Yıldırım</span>
                         <div className='bg-gradient-to-b from-orange to-red shadow-md p-1 w-[100px] h-[100px] rounded-full'>
-                            <Image loading='lazy' src={Me} className='rounded-full' />
+                            <Image loading='lazy' src={Me} alt='Burak Can Yıldırım' className='rounded-full' />
                         </div>
                         <span className='lg:text-xl text-slate-300 font-medium'>{moment(blog.createdAt).format('DD.MM.YYYY')}</span>
                     </div>
                 </div>
                 <div className='w-full lg:mt-8 px-[17px] lg:px-0'>
-                    <img loading='lazy' src={blog.mainPicture} className='w-full lg:max-h-[500px] object-cover object-center' />
+                    <img loading='lazy' src={blog.mainPicture} alt={blog.title} className='w-full lg:max-h-[500px] object-cover object-center' />
                 </div>
                 <div className='w-full px-[17px] lg:px-0 my-10'>
                     <div id='blogContent' dangerouslySetInnerHTML={{ __html: content }} />

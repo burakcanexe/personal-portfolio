@@ -6,7 +6,7 @@ function ArticleCard({ title, category, image, slug, creadetAt }) {
     return (
         <div className='w-full lg:w-[49%] bg-gradient-to-r from-lightbg to-bg shadow-lg mb-8 flex group'>
             <div className='w-5/12 lg:w-4/12 overflow-hidden'>
-                <img loading='lazy' src={image ? image : ''} className='w-full h-full object-cover object-center group-hover:scale-110 duration-500' />
+                <img loading='lazy' src={image ? image : ''} alt={title} className='w-full h-full object-cover object-center group-hover:scale-110 duration-500' />
             </div>
             <div className='w-7/12 lg:w-8/12 flex flex-col justify-center items-center lg:items-start px-2 lg:px-4 gap-4'>
                 <div className='flex justify-between items-center w-full'>
