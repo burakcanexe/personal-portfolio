@@ -1,4 +1,4 @@
-const baseUrl = 'https://burakcan.dev'
+const baseUrl = 'https://www.burakcan.dev'
 
 class Request {
     SendMessage = async (response) => {
