@@ -1,7 +1,4 @@
 import React from 'react'
-import project from '@/assets/img/project.png'
-import Logo from '@/assets/img/logoipsum.svg'
-import Image from 'next/image'
 
 function ProjectCard({ name, description, technologies, time, role, picture, link }) {
     return (
@@ -11,7 +8,7 @@ function ProjectCard({ name, description, technologies, time, role, picture, lin
             </a>
             <div className='flex flex-col lg:px-10 mt-8 lg:mt-0 w-full lg:w-7/12 gap-6 justify-between'>
                 <div className='flex flex-col'>
-                    <Image src={Logo} alt="" className='w-[180px]' />
+                    {/* <Image src={Logo} alt="" className='w-[180px]' /> */}
                     <a href={link} target='_blank' className='text-3xl font-bold group-hover:text-orange duration-200 mt-4'>{name}</a>
                 </div>
                 <p className='text-lg text-slate-300 font-medium'>{description}</p>

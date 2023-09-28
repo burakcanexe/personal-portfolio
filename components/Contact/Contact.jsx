@@ -1,9 +1,7 @@
 import React from 'react'
 import { AiOutlinePhone, AiOutlineTwitter } from 'react-icons/ai'
 import { BiLogoLinkedin } from 'react-icons/bi'
-import { BsLinkedin } from 'react-icons/bs'
 import { FiMail } from 'react-icons/fi'
-import { CustomButton } from '..'
 import ContactForm from './ContactForm'
 
 function Contact() {

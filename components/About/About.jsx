@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import me from '@/assets/img/Burak-Can-Yıldırım.jpg'
+import me from '@/assets/img/Burak-Can-Yıldırım.png'
 import { CustomButton } from '..'
 import { BiLogoMongodb, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiSolidChevronRight } from 'react-icons/bi'
 import { TypeAnimation } from 'react-type-animation';

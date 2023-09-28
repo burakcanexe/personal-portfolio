@@ -1,5 +1,4 @@
 import { Contact, About, Header, HomeArticles, HomeProjects, HomeServices } from '@/components'
-import Image from 'next/image'
 
 export default function Home() {
   return (

@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import React from 'react'
-import blog1 from '@/assets/img/blog-automation.jpg'
-import blog2 from '@/assets/img/blog-blockchain.jpg'
 import Link from 'next/link'
 import moment from 'moment/moment'
 

@@ -2,6 +2,11 @@ import React from 'react'
 import { BsDot } from 'react-icons/bs'
 import { CustomButton } from '..'
 import ServiceCard from './ServiceCard'
+import phone from '@/assets/img/phone.png'
+import computer from '@/assets/img/computer.png'
+import frontend from '@/assets/img/frontend.png'
+import backend from '@/assets/img/backend.png'
+import Image from 'next/image'
 
 function HomeServices() {
     return (
@@ -44,10 +49,10 @@ function HomeServices() {
                 </div>
             </div>
             <div className='flex flex-wrap w-full lg:w-7/12 justify-between'>
-                <ServiceCard type={'mobil'} title={'Mobil Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
-                <ServiceCard type={'web'} title={'Web Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
-                <ServiceCard type={'frontend'} title={'Frontend Geliştirme'} maddeler={['Modern Tasarım Geliştirme', 'Yeni Componentler Geliştirme', 'Pixel Perfect Kodlama']} />
-                <ServiceCard type={'backend'} title={'Backend Geliştirme'} maddeler={['Optimize Kodlama', 'Rest API Geliştirme', 'Socket.io İle Canlı İletişim']} />
+                <ServiceCard icon={() => { return <Image src={phone} className='w-[60px]' /> }} type={'mobil'} title={'Mobil Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
+                <ServiceCard icon={() => { return <Image src={computer} className='w-[60px]' /> }} type={'web'} title={'Web Uygulama Geliştirme'} maddeler={['Modern Tasarım', 'Tasarımın 1/1 kodlanması', 'Admin Panel', 'Çoklu Dil Desteği', 'Optimize Kodlama']} />
+                <ServiceCard icon={() => { return <Image src={frontend} className='w-[60px]' /> }} type={'frontend'} title={'Frontend Geliştirme'} maddeler={['Modern Tasarım Geliştirme', 'Yeni Componentler Geliştirme', 'Pixel Perfect Kodlama']} />
+                <ServiceCard icon={() => { return <Image src={backend} className='w-[60px]' /> }} type={'backend'} title={'Backend Geliştirme'} maddeler={['Optimize Kodlama', 'Rest API Geliştirme', 'Socket.io İle Canlı İletişim']} />
             </div>
         </div >
     )

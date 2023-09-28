@@ -3,7 +3,6 @@ import { getPostData } from '@/utils/GetPostData'
 import React, { useEffect, useState } from 'react'
 import './style.css';
 import Me from '@/assets/img/Burak-Can-Yıldırım.png'
-import blogPicture from '@/assets/img/blog-automation.jpg'
 import Image from 'next/image';
 import { BurakCanClient } from '@/utils/BurakCanClient';
 import moment from 'moment';
