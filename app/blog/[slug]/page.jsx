@@ -19,11 +19,11 @@ function page({ params }) {
     const getData = async () => {
         const { data } = await BurakCanClient.GetBlog({ slug: params.slug })
         if (data) {
+            const _blog = await getPostData(data.content)
+            setMetadata(data)
+            setContent(_blog.contentHtml)
             setBlog(data)
         }
-        const _blog = await getPostData(data.content)
-        setMetadata(data)
-        setContent(_blog.contentHtml)
     }
     const setMetadata = (data) => {
         document.title = `${data.title} - Burak Can Yıldırım`
