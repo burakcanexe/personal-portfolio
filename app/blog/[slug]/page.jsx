@@ -20,12 +20,23 @@ function page({ params }) {
         const { data } = await BurakCanClient.GetBlog({ slug: params.slug })
         if (data) {
             setBlog(data)
-            document.title = `${data.title} - Burak Can Yıldırım`
-            const _blog = await getPostData(data.content)
-            setContent(_blog.contentHtml)
+        }
+        const _blog = await getPostData(data.content)
+        setMetadata(data)
+        setContent(_blog.contentHtml)
+    }
+    const setMetadata = (data) => {
+        document.title = `${data.title} - Burak Can Yıldırım`
+        var descriptionMeta = document.querySelector('meta[name="description"]');
+        if (descriptionMeta) {
+            descriptionMeta.setAttribute("content", data.description);
+
+        }
+        var authorMeta = document.querySelector('meta[name="author"]');
+        if (authorMeta) {
+            authorMeta.setAttribute("content", "Burak Can Yıldırım");
         }
     }
-
     if (!blog) return null
     return (
         <div className='flex justify-center bg-bg min-h-screen'>
